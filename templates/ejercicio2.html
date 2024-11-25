@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Inicio de Sesión</h2>
+<form method="POST">
+    <label>Usuario</label>
+    <input type="text" name="usuario" required>
+    <label>Contraseña</label>
+    <input type="password" name="contrasena" required>
+    <button type="submit" class="blue-button">Ingresar</button>
+</form>
+
+{% if mensaje is not none %}
+<div class="resultado">
+    <p>{{ mensaje }}</p>
+</div>
+{% endif %}
+{% endblock %}

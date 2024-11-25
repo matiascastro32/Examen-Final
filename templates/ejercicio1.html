@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Calculo de compras</h2>
+<form method="POST">
+    <label>Ingresa tu nombre</label>
+    <input type="text" name="nombre" required>
+    <label>Ingresa tu edad</label>
+    <input type="number" name="edad" required>
+    <label>Ingresa la cantidad de tarros de pintura a comprar</label>
+    <input type="number" name="cantidad_tarros" required>
+    <button type="submit" class="blue-button">Calcular</button>
+</form>
+
+{% if total_sin_descuento is not none %}
+<div class="resultado">
+    <p><strong>Nombre del cliente:</strong> {{ nombre }}</p>
+    <p><strong>Total sin descuento:</strong> ${{ total_sin_descuento }}</p>
+    <p><strong>El descuento es de:</strong> ${{ descuento }}</p>
+    <p><strong>Total a pagar:</strong> ${{ total_con_descuento }}</p>
+</div>
+{% endif %}
+{% endblock %}

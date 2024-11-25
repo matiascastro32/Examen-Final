@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #007BFF;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.button.purple {
+    background-color: purple;
+}
+
+.button.green {
+    background-color: green;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
